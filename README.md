@@ -7,27 +7,26 @@
 3. Настройка базовой структуры проекта feature/menu
     - Настройка роутинга
     - Создание компонента "Menu"
-4. Создание и работа в ветке feature/welcome-page:
     - Создание страницы приветствия
-5. Создание и работа в ветке feature/headings-page:
-    - Создание компонента "Header"
+4. Создание и работа в ветке feature/headings-page:
+    - Создание компонента "Heading"
     - Создание страницы "HeadingsPage"
-6. Создание и работа в ветке feature/text-page:
+5. Создание и работа в ветке feature/text-page:
     - Создание компонента "Text"
     - Создание страницы "TextPage"
-7. Создание и работа в ветке feature/paragraphs-page:
+6. Создание и работа в ветке feature/paragraphs-page:
     - Создание компонента "Paragraph"
     - Создание страницы "ParagraphsPage"
-8. Создание и работа в ветке feature/buttons-page:
-    - Создание компонента "Button"
+7. Создание и работа в ветке feature/buttons-page:
+    - Создание компонента "Button"  
     - Создание страницы "ButtonsPage"
-9. Создание и работа в ветке feature/cards-page:
+8. Создание и работа в ветке feature/cards-page:
     - Создание компонента "Card"
     - Создание страницы "CardsPage"
-10. Создание и работа в ветке feature/badges-page:
+9. Создание и работа в ветке feature/badges-page:
     - Создание компонента "Badge"
     - Создание страницы "Badges"
-11. Создание и работа в ветке feature/toasts-page:
+10. Создание и работа в ветке feature/toasts-page:
     - Создание компонента "Toast"
     - Создание страницы "ToastsPage"
-12. Публикация проекта через GitHub Pages
+11. Публикация проекта через GitHub Pages
