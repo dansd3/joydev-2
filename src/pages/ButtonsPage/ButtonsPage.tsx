@@ -1,7 +1,7 @@
 import styles from './ButtonsPage.module.scss';
 import { Button } from '../../components/Button/Button';
 
-const variants = ['primary', 'regular',   'minimal', 'disabled', 'active', 'danger',] as const;
+const variants = ['primary', 'regular', 'minimal', 'disabled', 'active', 'danger'] as const;
 
 const ButtonsPage = () => {
   return (

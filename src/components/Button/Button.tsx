@@ -13,19 +13,13 @@ export interface ButtonProps {
 
 export const Button = ({ variant, icon, label, className, onClick }: ButtonProps) => {
   const isDisabled = variant === 'disabled';
-  const classes = classNames(
-    styles.button,
-    styles[`button--variant--${variant}`],
-    className
+  const classes = classNames(styles.button, styles[`button--variant--${variant}`], className);
+
+  return (
+    <button className={classes} onClick={onClick} disabled={isDisabled}>
+      {icon === 'plus' && <PlusIcon />}
+      <span className={styles.button__label}>{label}</span>
+      {icon === 'caret' && <CaretDownIcon />}
+    </button>
   );
-
-
- return (
-  <button className={classes} onClick={onClick} disabled={isDisabled}>
-    {icon === 'plus' && <PlusIcon/>}
-    <span className={styles.button__label}>{label}</span>
-    {icon === 'caret' && <CaretDownIcon/>}
-  </button>
-);
-
 };

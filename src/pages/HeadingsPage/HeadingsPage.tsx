@@ -14,15 +14,25 @@ const headingExamples = [
 ];
 
 const HeadingsPage = () => (
-    <div className={styles.container}>
-        {headingExamples.map(({ level, label, showTag }) => (
-            <div key={level} className={styles.row}>
-                {showTag && <Heading size={500} className={styles.default}>Default</Heading>}
-                <Heading size={level as 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900}> {level}</Heading>
-                <Heading size={level as 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900}> {label} </Heading>
-            </div>
-        ))}
-    </div>
+  <div className={styles.container}>
+    {headingExamples.map(({ level, label, showTag }) => (
+      <div key={level} className={styles.row}>
+        {showTag && (
+          <Heading size={500} className={styles.default}>
+            Default
+          </Heading>
+        )}
+        <Heading size={level as 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900}>
+          {' '}
+          {level}
+        </Heading>
+        <Heading size={level as 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900}>
+          {' '}
+          {label}{' '}
+        </Heading>
+      </div>
+    ))}
+  </div>
 );
 
 export default HeadingsPage;

@@ -18,11 +18,11 @@ export const Text: React.FC<TextProps> = ({
   className,
 }) => {
   const classes = classNames(
-  styles.text,
-  styles[`text--size--${size}-${weight}`],
-  isLink && styles['text--link'],
-  className
-);
+    styles.text,
+    styles[`text--size--${size}-${weight}`],
+    isLink && styles['text--link'],
+    className
+  );
 
   return <p className={classes}>{children}</p>;
 };

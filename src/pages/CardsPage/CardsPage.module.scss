@@ -1,0 +1,27 @@
+@use '../../styles/variables' as *;
+
+.page {
+  padding: 24px;
+
+  &__grid {
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  &__title {
+    font-family: 'SF Pro Text';
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-default;
+    margin-bottom: 4px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    font-family: 'SF Pro Text';
+    font-size: 11px;
+    line-height: 22px;
+    color: $color-default;
+  }
+}

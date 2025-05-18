@@ -11,4 +11,4 @@ module.exports = {
     'react/prop-types': 'off',
     'import/prefer-default-export': 'off',
   },
-}
+};
