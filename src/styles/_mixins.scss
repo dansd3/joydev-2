@@ -14,3 +14,10 @@
   letter-spacing: $letter_spacing;
   color: $text_color;
 }
+
+@mixin paragraph-style($font-size, $line-height, $margin-top, $letter-spacing) {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin-top: $margin-top;
+  letter-spacing: $letter-spacing;
+}

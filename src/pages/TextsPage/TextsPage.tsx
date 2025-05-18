@@ -45,10 +45,7 @@ const TextsPage = () => {
                 {showTag && (
                   <Text className={styles.texts__default}>Default</Text>
                 )}
-                <Text
-                  size={size as 300 | 400 | 500}
-                  weight={weight as any}
-                >
+                <Text size={size as 300 | 400 | 500} weight={weight as any}>
                   {label}
                 </Text>
               </div>
