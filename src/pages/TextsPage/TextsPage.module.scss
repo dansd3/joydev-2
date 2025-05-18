@@ -1,0 +1,37 @@
+.texts {
+  display: flex;
+  padding: 24px;
+  position: relative;
+  margin-left: 100px;
+
+  &__groups {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; // отступ между 300/400/500
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__row {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 30px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-left: 200px;
+  }
+
+  &__default {
+  position: absolute;
+  left: -100px;
+}
+}

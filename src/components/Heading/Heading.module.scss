@@ -1,54 +1,44 @@
-$dark: #234361;
-$default: #425A70;
-$muted: #66788A;
-
-@mixin heading-style($weight, $font_size, $line_height, $margin_top, $letter_spacing, $text_color) {
-  font-weight: $weight;
-  font-size: $font_size;
-  line-height: $line_height;
-  margin-top: $margin_top;
-  letter-spacing: $letter_spacing;
-  color: $text_color;
-}
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
 
 .heading {
-  font-family: "SF Pro Display",  sans-serif;
+  font-family: "SF Pro Display";
   padding: 0;
 
   &--level-900 {
-    @include heading-style(900, 35px, 40px, 52px, -0.24px, $default);
+    @include heading-style(900, 35px, 40px, 52px, -0.24px, $color-default);
   }
 
   &--level-800 {
-    @include heading-style(800, 29px, 32px, 40px, -0.24px, $dark);
+    @include heading-style(800, 29px, 32px, 40px, -0.24px, $color-dark);
   }
 
   &--level-700 {
-    @include heading-style(700, 24px, 28px, 28px, -0.06px, $dark);
+    @include heading-style(700, 24px, 28px, 28px, -0.06px, $color-dark);
   }
 
   &--level-600 {
-    @include heading-style(600, 20px, 24px, 24px, -0.06px, $dark);
+    @include heading-style(600, 20px, 24px, 24px, -0.06px, $color-dark);
   }
 
   &--level-500 {
-    @include heading-style(500, 16px, 20px, 16px, -0.05px, $dark);
+    @include heading-style(500, 16px, 20px, 16px, -0.05px, $color-dark);
   }
 
   &--level-400 {
-    @include heading-style(400, 14px, 20px, 16px, -0.05px, $dark);
+    @include heading-style(400, 14px, 20px, 16px, -0.05px, $color-dark);
   }
 
   &--level-300 {
-    @include heading-style(300, 12px, 16px, 16px, 0px, $dark);
+    @include heading-style(300, 12px, 16px, 16px, 0px, $color-dark);
   }
 
   &--level-200 {
-    @include heading-style(200, 12px, 16px, 16px, 0px, $muted);
+    @include heading-style(200, 12px, 16px, 16px, 0px, $color-muted);
   }
 
   &--level-100 {
-    @include heading-style(100, 11px, 16px, 16px, 0.3px, $muted);
+    @include heading-style(100, 11px, 16px, 16px, 0.3px, $color-muted);
     text-transform: uppercase;
   }
 }
