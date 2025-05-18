@@ -43,7 +43,10 @@ const TextsPage = () => {
             {items.map(({ label, weight, showTag }) => (
               <div key={label} className={styles.texts__row}>
                 {showTag && <Text className={styles.texts__default}>Default</Text>}
-                <Text size={size as 300 | 400 | 500} weight={weight as 'default' | 'medium' | 'semibold'}>
+                <Text
+                  size={size as 300 | 400 | 500}
+                  weight={weight as 'default' | 'medium' | 'semibold'}
+                >
                   {label}
                 </Text>
               </div>

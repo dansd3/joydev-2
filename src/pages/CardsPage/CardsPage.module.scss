@@ -4,7 +4,8 @@
   padding: 24px;
 
   &__grid {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     justify-items: center;
   }
