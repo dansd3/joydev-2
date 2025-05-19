@@ -1,11 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { routes } from './routes/routes';
 import { Menu } from './components/Menu/Menu';
 import styles from './styles/App.module.scss';
 
 function App() {
   return (
-    <Router>
       <div className={styles.app}>
         <Menu className={styles.app__menu} />
         <main className={styles.app__content}>
@@ -16,7 +15,6 @@ function App() {
           </Routes>
         </main>
       </div>
-    </Router>
   );
 }
 
