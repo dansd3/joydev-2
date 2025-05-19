@@ -5,6 +5,7 @@ import ParagraphsPage from '../pages/ParagraphsPage/ParagraphsPage';
 import ButtonsPage from '../pages/ButtonsPage/ButtonsPage';
 import CardsPage from '../pages/CardsPage/CardPage';
 import BadgesPage from '../pages/BadgesPage/BadgesPage';
+import ToastsPage from '../pages/ToastsPage/ToastsPage';
 
 export const routes = [
   { path: '/', label: 'Приветствие', element: <WelcomePage /> },
@@ -14,4 +15,5 @@ export const routes = [
   { path: '/buttons', label: 'Buttons', element: <ButtonsPage /> },
   { path: '/cards', label: 'Cards', element: <CardsPage /> },
   { path: '/badges', label: 'Badges', element: <BadgesPage /> },
+  { path: '/toasts', label: 'Toasts', element: <ToastsPage /> },
 ];

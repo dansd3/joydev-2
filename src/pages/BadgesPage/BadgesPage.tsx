@@ -3,7 +3,7 @@ import styles from './BadgesPage.module.scss';
 import { Heading } from '../../components/Heading/Heading';
 
 const colors = ['neutral', 'green', 'blue', 'red', 'orange', 'purple', 'yellow', 'teal'] as const;
-const numbers = ['8', '1', '3', '99+', '1', '3', '6', '2'] as const;
+const numbers = ['8', '1', '3', '99+', '1', '3', '6', '2'];
 const useCases = [
   {
     label: 'beta',
@@ -80,8 +80,8 @@ const BadgesPage = () => (
 
     <Heading size={100}>Badge Use Cases</Heading>
     <div className={styles.usecases}>
-      {useCases.map((item, i) => (
-        <div key={i} className={styles.usecases__row}>
+      {useCases.map((item) => (
+        <div className={styles.usecases__row}>
           <Badge color={item.color} type="subtle" shape="badge">
             {item.label}
           </Badge>

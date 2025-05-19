@@ -3,6 +3,10 @@
 .page {
   padding: 24px;
 
+  &__element {
+    width: 200px;
+    height: 120px;
+  }
   &__grid {
     display: flex;
     flex-wrap: wrap;

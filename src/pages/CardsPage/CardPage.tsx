@@ -13,7 +13,11 @@ const CardsPage = () => {
     <div className={styles.page}>
       <div className={styles.page__grid}>
         {cards.map((card) => (
-          <Card key={card.elevation} elevation={card.elevation as 0 | 1 | 2 | 3}>
+          <Card
+            key={card.elevation}
+            elevation={card.elevation as 0 | 1 | 2 | 3}
+            className={styles.page__element}
+          >
             <h1 className={styles.page__title}>{card.title}</h1>
             <p className={styles.page__desc}>{card.description}</p>
           </Card>
