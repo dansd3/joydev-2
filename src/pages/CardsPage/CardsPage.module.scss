@@ -1,0 +1,32 @@
+@use '../../styles/variables' as variables;
+
+.page {
+  padding: 24px;
+
+  &__element {
+    width: 200px;
+    height: 120px;
+  }
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-items: center;
+  }
+
+  &__title {
+    font-family: variables.$font-text;
+    font-size: 14px;
+    line-height: 22px;
+    color: variables.$color-default;
+    margin-bottom: 4px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    font-family: variables.$font-text;
+    font-size: 11px;
+    line-height: 22px;
+    color: variables.$color-default;
+  }
+}

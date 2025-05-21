@@ -1,0 +1,17 @@
+.container {
+  padding: 24px;
+  margin-left: 100px;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 30px;
+}
+
+.default {
+  position: absolute;
+  left: -100px;
+}

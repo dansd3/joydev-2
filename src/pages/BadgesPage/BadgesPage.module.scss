@@ -1,0 +1,47 @@
+@use '../../styles/variables' as variables;
+
+.page {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  h2 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    color: variables.$color-dark;
+  }
+
+  .container {
+    margin-bottom: 40px;
+  }
+
+  .row {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .usecases {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    &__row {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    &__text {
+      font-family:  variables.$font-text;
+      font-size: 14px;
+      color: variables.$color-default;
+      line-height: 27px;
+      font-weight: 600;
+    }
+  }
+}
