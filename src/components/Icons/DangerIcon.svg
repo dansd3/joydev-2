@@ -1,6 +1,4 @@
-export const DangerIcon = ({ className }: { className?: string }) => (
   <svg
-    className={className}
     width="14"
     height="14"
     viewBox="0 0 14 14"
@@ -14,4 +12,3 @@ export const DangerIcon = ({ className }: { className?: string }) => (
       fill="#EC4C47"
     />
   </svg>
-);

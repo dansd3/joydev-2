@@ -1,3 +1,4 @@
+@use '../styles/variables' as variables;
 .app {
   display: flex;
   height: 100vh;
@@ -5,7 +6,7 @@
 
   &__menu {
     width: 240px;
-    background-color: white;
+    background-color: variables.$color-white;
     border-right: 1px solid #ddd;
     display: flex;
     margin-top: 100px;

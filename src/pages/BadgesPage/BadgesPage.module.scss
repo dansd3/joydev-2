@@ -1,4 +1,4 @@
-@use '../../styles/variables' as *;
+@use '../../styles/variables' as variables;
 
 .page {
   padding: 24px;
@@ -10,7 +10,7 @@
     margin-bottom: 12px;
     font-size: 16px;
     font-weight: 600;
-    color: $color-dark;
+    color: variables.$color-dark;
   }
 
   .container {
@@ -37,9 +37,9 @@
     }
 
     &__text {
-      font-family: 'SF Pro Text';
+      font-family:  variables.$font-text;
       font-size: 14px;
-      color: $color-default;
+      color: variables.$color-default;
       line-height: 27px;
       font-weight: 600;
     }

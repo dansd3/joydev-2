@@ -1,6 +1,4 @@
-export const InfoIcon = ({ className }: { className?: string }) => (
-  <svg
-    className={className}
+<svg
     width="14"
     height="14"
     viewBox="0 0 14 14"
@@ -12,4 +10,3 @@ export const InfoIcon = ({ className }: { className?: string }) => (
       fill="#1070CA"
     />
   </svg>
-);
